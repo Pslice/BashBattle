@@ -21,8 +21,8 @@
 clear
 
 function levelDemonKnight(){ # First enemy
-  echo "Oh no its the Demon Knight, what do you do?"
-  enemy="Demon Knight"
+  echo "Oh no its the Daemon Knight, what do you do?"
+  enemy="Daemon Knight"
 cat << "EOF"
   ,/         \.
  ((           ))
