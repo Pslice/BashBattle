@@ -165,6 +165,16 @@ function Play(){ # Play Bash Battle function
         rm Player.txt
         NewPlayer    
       fi
+      if [[ $special -lt 0 ]]; then
+        read -n1 -r -p "Special points are less than 0"
+        rm Player.txt
+        NewPlayer 
+      fi
+      if [[ $pHP -lt 0 ]]; then
+        read -n1 -r -p "Player hitpoints are less than 0"
+        rm Player.txt
+        NewPlayer 
+      fi 
   level=1 # Declare Player's starting level
   specialCount=2 # Declare special usage
   levelSelect
